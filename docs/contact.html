@@ -3,41 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="css/web.css" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
-
 <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <nav class="navbar bg-body-tertiary">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="https://media.glassdoor.com/sqll/5988578/nest-digital-squarelogo-1647421869741.png" alt="NEST" width="100" height="50">
+    </a>
+  </div>
+</nav>
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand">NeST</a>
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
 
-<header class="header">
-    <h1>My Portfolio</h1>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Businesses
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="mobility.html">Mobility</a></li>
+            <li><a class="dropdown-item" href="healthcare.html">Healthcare</a></li>
+            <li><a class="dropdown-item" href="aerospaceanddefence.html">Aerospace and Defence</a></li>
+            <li><a class="dropdown-item" href="industrial.html">Industrial</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+    <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@gmail.com">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+<button type="submit" class="btn btn-primary mb-3">Send message</button>
+<section class="container mt-5 mb-5">
+    <h4 class="fw-bold mb-3">Find Us On the Map</h4>
 
-    <nav class="navbar">
-        <ul>
-            <li><a href="portfolio.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="achievements.html">Achievements</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
+    <div class="map-box">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.602185984436!2d76.33985977471636!3d9.971226573632232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d3540458bb7%3A0x6f2f7bb840c2d6df!2sNeST%20Digital!5e0!3m2!1sen!2sin!4v1706809870000!5m2!1sen!2sin"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+    </div>
+</section>
+
+<footer class="site-footer bg-dark text-light py-5">
+  <div class="container">
+    <div class="row">
+
+      <!-- About Section -->
+      <div class="col-md-4 mb-4">
+        <h5>NeST Digital</h5>
+        <p>
+          NeST Digital delivers innovative IT solutions and digital
+          transformation services across industries with quality and trust.
+        </p>
+      </div>
+
+      <!-- Quick Links Section -->
+      <div class="col-md-4 mb-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled footer-links">
+          <li><a href="index.html" class="text-light">Home</a></li>
+          <li><a href="healthcare.html" class="text-light">Healthcare</a></li>
+          <li><a href="mobility.html" class="text-light">Mobility</a></li>
+          <li><a href="aerospaceanddefence.html" class="text-light">Aerospace</a></li>
+          <li><a href="industrial.html" class="text-light">Industrial</a></li>
         </ul>
-    </nav>
+      </div>
 
-</header>
-<main>
-    <div class="container">
-        <h1>Contact Me</h1>
-        <p>Email:   <a href="mailto:aaryaanil2028@cs.ajce.in">aaryaanil2028@cs.ajce.in</a></p>
-        <p>Phone:    6282941045</p>
+      <!-- Contact Section -->
+      <div class="col-md-4 mb-4">
+        <h5>Contact</h5>
+        <ul class="list-unstyled">
+          <li><i class="fa-solid fa-location-dot me-2"></i>Location: Kerala, India</li>
+          <li><i class="fa-solid fa-envelope me-2"></i>Mail: info@nestdigital.com</li>
+          <li><i class="fa-solid fa-phone me-2"></i>Phone: +91 9876543210</li>
+        </ul>
+      </div>
+
     </div>
 
-    <a href="portfolio.html" class="back-btn">⬅ Back to Home</a>
-</main>
+    <hr class="border-light">
 
-<footer>
-    <p>&copy; 2025 Aarya Anil</p>
+    <div class="text-center">
+      <p class="mb-0">© 2025 NeST Digital. All rights reserved.</p>
+    </div>
+  </div>
 </footer>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
+
